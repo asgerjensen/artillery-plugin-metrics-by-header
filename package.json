@@ -1,0 +1,29 @@
+{
+    "name": "artillery-plugin-metrics-by-header",
+    "version": "1.0.0",
+    "description": "Breakdown of latency and response codes for Artillery HTTP tests by specific http header value.",
+    "main": "index.js",
+    "scripts": {
+      "test": "npm run test:unit && npm run test:acceptance",
+      "test:acceptance": "tap ./test/*.spec.js --timeout 300",
+      "test:unit": "tap test/*.unit.js"
+    },
+    "tap": {
+      "disable-coverage": true,
+      "allow-empty-coverage": true,
+      "color": true,
+      "test-env": [
+        "ARTILLERY_TELEMETRY_DEFAULTS={\"source\":\"test-suite\"}"
+      ]
+    },
+    "keywords": [],
+    "author": "Asger Jensen <asger.jensen@gmail.com>",
+    "license": "MPL-2.0",
+    "dependencies": {
+      "debug": "^4.3.2"
+    },
+    "devDependencies": {
+      "tap": "^19.0.2",
+      "zx": "^8.1.4"
+    }
+  }
