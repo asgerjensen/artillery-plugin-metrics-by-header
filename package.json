@@ -16,6 +16,10 @@
         "ARTILLERY_TELEMETRY_DEFAULTS={\"source\":\"test-suite\"}"
       ]
     },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/asgerjensen/artillery-plugin-metrics-by-header"
+    },
     "keywords": [],
     "author": "Asger Jensen <asger.jensen@gmail.com>",
     "license": "MPL-2.0",
